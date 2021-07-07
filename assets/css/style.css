@@ -136,7 +136,7 @@ main{
 .secaoDestaque{
     background-image: url(../img/background-destaque.webp);
     height: 400px;
-    background-size: 100%;
+    background-size: 100% 800px;
 }
 
 .secaoDestaque{
