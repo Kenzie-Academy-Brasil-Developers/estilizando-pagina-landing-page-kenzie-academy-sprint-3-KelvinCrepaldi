@@ -1,35 +1,302 @@
 
-/*
-Theme Name: Landing Page Kenzie Academy
-Theme URI: https://kenzie.com.br/
-Author: Kenzie Academy 
-Author URI: https://kenzie.com.br/
-Description: Descrção do thema.
-Version: 1.0
-Text Domain: https://kenzie.com.br/
 
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
 
-family=Montserrat -> Menus
-family=Lato -> Títulos, textos
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --branco: #FFFFFF;
+    --azul-claro: #007aff;
+    --azul-escuro: #00043e;
+    --cinza: #303030;
+    --cinza-claro: #818181;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -77,21 +344,217 @@ header{}
 /* FOOTER */
 footer{}
 /* FOOTER */
+footer p{
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    color: var(--cinza-claro);
+}
 
+footer .seta{
+    position: relative;
+    left: 670px;
+    top: 45px;
+    color: var(--azul-claro)
+}
+
+footer p a {
+    text-decoration: none;
+}
 /* INICIAL */
 main{}
 /* INICIAL */
+main .secaoCursos{
+    display: flex;
+}
 
-/* EXTRAS */
+main .secaoCursos article h2, main .secaoCursos article p {
+    text-align: center;
+    margin-bottom: 25px;
+}
 
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+main .secaoCursos ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-content: center;
+}
+
+main .secaoCursos ul li{
+    margin: 0 30px 90px 30px;
+    font-size: 15px;
+}
+
+main .secaoCursos ul li img{
+    cursor: pointer;
+}
+
+main .secaoCursos ul li img:hover{
+    filter: grayscale(100%);
+}
+
+main .secaoCursos ul li h3{
+    margin-bottom: 35px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+
+main .secaoCursos article ul li img{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main .secaoCalendar h2, main .secaoCalendar p{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+main .secaoCalendar .calendario{
+    flex-direction: row;
+    height: 550px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+main .secaoCalendar .calendario li{
+    border: 2px solid var(--azul-escuro);
+    margin: 10px;
+}
+
+main .secaoCalendar .calendario li .calendario-data{
+    border: 2px solid var(--azul-escuro);
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 1px;
+    height: 90px;
+    padding-top: 18px;
+    font-size: 36px;
+}
+
+main .secaoCalendar .calendario li h3{
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 19px;
+}
+
+main .secaoCalendar .calendario li p{
+    font-size: 15px;
+}
+
+main .secaoCalendar .calendario li .lore{
+    line-height: 30px;
+}
+
+main .secaoCalendar .calendario li .hr{
+    margin-top: 32px;
+    font-size: 32px;
+}
+
+main .secaoCalendar .calendario li button{
+    font-size: 32px;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    border: none;
+    border-radius: 5%;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+main .secaoCalendar .calendario li button:hover{
+    background-color: var(--azul-escuro);
+}
+
+main .secaoContato{
+    margin-top: 40px;
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+main .secaoContato .flex-col .secaoContato-informacoes{
+    margin-left: 50px;
+    color: var(--cinza-claro);
+}
+
+.vai2{
+    margin-bottom: 10px; 
+}
+
+.vai{
+    margin-bottom: 10px;
+}
+
+main .secaoContato .flex-col .secaoContato-informacoes ul li a, main .secaoContato .flex-col .secaoContato-informacoes p{
+    color: var(--cinza-claro);
+    text-decoration: none;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+main .secaoContato .flex .flex-col .secaoContato-informacoes ul li a{
+    padding-bottom: 20px;
+}
+
+main .secaoContato .flex-col h2{
+    margin-bottom: 25px;
+    margin-left: 31.5%;
+    text-transform: uppercase;
+}
+
+main .secaoContato .flex-col .acao{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .secaoContato .flex-col .acao .form-input-model{
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+
+main .secaoContato .flex-col .acao .form-input-model label{
+    display: none;
+}
+
+.form-input-model{
+
+}
+
+#nome{
+    width: 250px;
+}
+
+#email{
+    width: 250px;
+    position: relative;
+    bottom: 30px;
+    left: 270px;
+}
+
+#mensagem{
+    height: 100px;
+    width: 522px;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: 27px;
+    padding: 5px;
+}
+
+.mexe{
+    margin-left: 76.8%;
+    padding: 5px;
+}
 
 /* EXTRAS */
   
