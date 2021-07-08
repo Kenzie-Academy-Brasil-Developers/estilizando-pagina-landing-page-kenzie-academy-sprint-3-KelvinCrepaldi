@@ -279,15 +279,40 @@ main .secaoContato .flex-col .secaoContato-informacoes{
 .vai2{
     margin-bottom: 10px; 
     position: relative;
-    left:1%;
+    right: 7.9%;
 }
 
 .vai{
     margin-bottom: 10px;
     list-style-type: none;
     position: relative;
-    left:30%;
+    left:20%;
     bottom: 40px;
+}
+
+main .secaoContato .secaoContato-informacoes ul li{
+    margin-bottom: 15px;
+}
+
+main .secaoContato .secaoContato-informacoes ul li:nth-child(1) a{
+    background-image: url(../img/icons8-place-marker-24\(1\).png);
+    background-repeat: no-repeat;
+}
+
+main .secaoContato .secaoContato-informacoes ul li:nth-child(2) a{
+    background-repeat: no-repeat;
+    background-image: url(../img/icons8-speaker-phone-24\(1\).png);
+}
+
+main .secaoContato .secaoContato-informacoes ul li:nth-child(3) a{
+    color: var(--cinza-claro);
+    background-repeat: no-repeat;
+    background-image: url(../img/icons8-send-email-24.png);
+}
+
+span{
+    position: relative;
+    left: 30px;
 }
 
 main .secaoContato .flex-col .secaoContato-informacoes ul li a, main .secaoContato .flex-col .secaoContato-informacoes p{
@@ -673,6 +698,103 @@ div.container{
             align-content: flex-end;
             
         }
+
+        main .secaoCalendar .calendario{
+            flex-direction: column;
+            
+        }
+
+        main .secaoCalendar .calendario li button, .hr{
+            bottom: 10px;
+        }
+
+        .vai{
+            margin-left: 20000px;
+        }
+
+        
+        main .secaoContato .flex-col h2{
+            display: flex;
+            justify-content: center;
+            margin-top: 930px;
+            margin-right: 800px;
+            margin-left: 40px;
+        }
+        
+        main .secaoContato .flex .flex-col .secaoContato-informacoes{
+            position: relative;
+            top: 1200px;
+            right: 230px;
+            font-size: 10px;
+        }
+
+       .vai{
+           position: relative;
+           font-size: 13px;
+           top: 1px;
+           left: 77px;
+       }
+       
+        p.vai2{
+            position: relative;
+            left: 130px;
+            font-size: 13px;
+            width: 430px;
+            top: 40px;
+            margin-right: 20px;
+            padding-right: 200px;
+        }
+        
+        .acao{
+            position: relative;
+            top: 310px;
+            right: 300px;
+        }
+
+        #nome{
+            width: 200px;
+            bottom: 190px;
+            padding: 5px;
+            right: 53px;
+            padding-right: 0px;
+        }
+        
+        #email{
+            width: 200px;
+            padding: 5px;
+            bottom: 190px;
+            left: -53px;
+        }
+        
+        #mensagem{
+            width: 200px;
+            bottom: 190px;
+            right: 53px;
+            padding: 5px;
+
+        }
+        
+        .mexe{
+            margin-left: 0;
+            right: 120px;
+            height: 40px;
+            width:  70px;
+            cursor: pointer;
+        }
+
+        .mexe:hover{
+            box-shadow: 0 2px 0 0 ;
+        }
+           
+       footer .seta{
+          top: 165px;
+          position: relative;
+          left: 185px;
+       }
+
+       footer p {
+           display: none;
+       }
 
     }
 /* MEDIA QUERIES */
