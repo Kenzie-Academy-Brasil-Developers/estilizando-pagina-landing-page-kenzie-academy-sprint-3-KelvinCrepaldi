@@ -199,6 +199,7 @@ main .secaoCursos article ul li img{
     margin: 0 auto;
 }
 
+
 main .secaoCalendar h2, main .secaoCalendar p{
     margin-bottom: 25px;
     text-align: center;
@@ -634,6 +635,10 @@ div.container{
             
         }
 
+        .secaoCalendar{
+            height: 1915px;
+        }
+
         .secaoDestaqueFormulario input{
             width: 200px;
             padding: 20px;
@@ -644,6 +649,10 @@ div.container{
             
         }
 
+        .secaoContato{
+            height: 500px;
+        }
+        
         .flex-col{
             width: 100%;
             padding: 60px;
@@ -714,16 +723,14 @@ div.container{
 
         
         main .secaoContato .flex-col h2{
-            display: flex;
-            justify-content: center;
-            margin-top: 930px;
-            margin-right: 800px;
-            margin-left: 40px;
+            position: relative;
+            bottom: 370px;
+            right: 195px;
         }
         
         main .secaoContato .flex .flex-col .secaoContato-informacoes{
             position: relative;
-            top: 1200px;
+            bottom: 85px;
             right: 230px;
             font-size: 10px;
         }
@@ -747,13 +754,12 @@ div.container{
         
         .acao{
             position: relative;
-            top: 310px;
             right: 300px;
         }
 
         #nome{
             width: 200px;
-            bottom: 190px;
+            bottom: 256px;
             padding: 5px;
             right: 53px;
             padding-right: 0px;
@@ -762,34 +768,34 @@ div.container{
         #email{
             width: 200px;
             padding: 5px;
-            bottom: 190px;
+            bottom: 256px;
             left: -53px;
         }
         
         #mensagem{
             width: 200px;
-            bottom: 190px;
+            bottom: 256px;
             right: 53px;
             padding: 5px;
 
         }
         
         .mexe{
-            margin-left: 0;
-            right: 120px;
+            left: 27.5px;
             height: 40px;
             width:  70px;
             cursor: pointer;
+            bottom: 256px;
         }
 
         .mexe:hover{
             box-shadow: 0 2px 0 0 ;
         }
-           
-       footer .seta{
-          top: 165px;
+       
+        footer .seta{
+          top: 25px;
           position: relative;
-          left: 185px;
+          left: 146px;
        }
 
        footer p {
